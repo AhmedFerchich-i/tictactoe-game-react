@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .App-logo {
@@ -35,4 +40,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.retryEmoticon{
+  font-size: larger;
+  cursor: pointer;
+  
+}
+
+.gameHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-video{
+  position: fixed;
+  width:100vw;
+  height: 100vh;
+  z-index: -1; 
+  object-fit: cover; 
+  top: 0;
+  left: 0;
 }

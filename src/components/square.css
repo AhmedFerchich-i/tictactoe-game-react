@@ -1,0 +1,25 @@
+.square{
+    border: 3px solid rgb(81, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    box-shadow: 0 10px 10px rgba(240, 189, 172, 0.5) ;
+    filter: brightness(500%);
+    cursor:pointer;
+    user-select:none
+   
+}
+
+.square.clicked {
+    opacity: 1;                   /* fully visible */
+ 
+  }
+
+.square.disabled{
+    opacity: 0.2;
+    pointer-events:none;
+    cursor: not-allowed;
+    
+    
+}

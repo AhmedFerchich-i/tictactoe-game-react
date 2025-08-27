@@ -1,0 +1,19 @@
+.win-alert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 20px;
+}
+
+.p1-win-alert{
+    font-size: larger;
+    color: darkcyan;
+    font-weight: bolder;
+}
+.p2-win-alert{
+    font-size: larger;
+    color: darkcyan;
+    font-weight: bolder;
+}
