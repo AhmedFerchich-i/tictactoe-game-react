@@ -44,8 +44,9 @@
 
 
 .retryEmoticon{
-  font-size: larger;
+  font-size: 30px;
   cursor: pointer;
+  
   
 }
 
@@ -65,4 +66,10 @@
   object-fit: cover; 
   top: 0;
   left: 0;
+}
+
+.awsome-dev{
+  font-size: larger;
+  color: rgb(101, 199, 231);
+  filter: brightness(200%);
 }

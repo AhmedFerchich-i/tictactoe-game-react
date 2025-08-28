@@ -49,7 +49,7 @@ function App() {
     
        <Board/>
        <WinMessage></WinMessage>
-       <p style={{ fontsize:"larger" , color: "lightblue" }}>By Ahmed Ferchichi</p>
+       <p className='awsome-dev'>By Ahmed Ferchichi</p>
     </MatrixContext.Provider>
     
     </div>

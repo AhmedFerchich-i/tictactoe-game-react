@@ -8,12 +8,16 @@
 }
 
 .p1-win-alert{
-    font-size: larger;
+    font-size: 60px;
     color: darkcyan;
     font-weight: bolder;
+    user-select: none;
+    filter:brightness(500%)
 }
 .p2-win-alert{
-    font-size: larger;
+    font-size: 60px;
     color: darkcyan;
     font-weight: bolder;
+    user-select: none;
+    filter: brightness(500%)
 }
