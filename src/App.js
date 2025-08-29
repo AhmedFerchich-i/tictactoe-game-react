@@ -24,9 +24,10 @@ function App() {
       r3c1:0,r3c2:0,r3c3:0
     
     })
+    setGameOver(false)
     setIsX(true)
     setRetry(true)
-    setGameOver(false)
+    
   }
 
   return (
@@ -35,9 +36,9 @@ function App() {
       autoPlay
       loop
       muted 
-      playsInLine
+      playsInline
       className="background-video">
-        <source  src="videos/cozy-background.mp4" type="video/mp4" />
+        <source  src="/videos/cozy-background.mp4" type="video/mp4" />
 
       </video>
     

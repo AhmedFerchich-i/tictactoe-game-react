@@ -5,7 +5,7 @@ import O from './o'
 import X from './x'
 function Square({position}){
 
-    const {matrix,setMatrix,isX,setIsX,retry,gameOver}=useContext(MatrixContext)
+    const {matrix,setMatrix,isX,setIsX,retry,gameOver,setRetry}=useContext(MatrixContext)
     const [clicked,setClicked]=useState(false)
     
     function updateMatrix(pos){
@@ -23,12 +23,15 @@ function Square({position}){
    useEffect(()=>{
     if (retry){
         setClicked(false)
+        setRetry(false)
+        //console.log('clicked ',clicked)
+        
     }
 
-   },[retry])
+   },[retry,setRetry])
 
     return(
-        <div className={`square ${clicked ? "clicked":""} ${!clicked && gameOver ? "disabled":""}  `} 
+        <div className={`square ${clicked && !gameOver ? "clicked":""} ${!clicked && gameOver ? "disabled":""}  `} 
         onClick={()=>{updateMatrix(position);handleClik()}} >
           { 
              matrix[position] ==1 ? <X></X> : 
